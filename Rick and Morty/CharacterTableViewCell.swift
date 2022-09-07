@@ -23,7 +23,8 @@ class CharacterTableViewCell: UITableViewCell {
         species.text = person.species
         
         DispatchQueue.global().async {
-            guard let imageUrl = URL(string: person.image) else { return }
+            guard let personImage = person.image else { return }
+            guard let imageUrl = URL(string: personImage) else { return }
             guard let imageData = try? Data(contentsOf: imageUrl) else { return }
             
             DispatchQueue.main.async {

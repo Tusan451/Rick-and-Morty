@@ -87,7 +87,7 @@
                                             <outlet property="name" destination="Igm-T1-C3C" id="jwr-bw-daY"/>
                                             <outlet property="species" destination="yPt-xV-nBN" id="548-to-hmC"/>
                                             <outlet property="status" destination="hRw-z6-sUT" id="XpC-ni-afL"/>
-                                            <segue destination="O0w-85-uGg" kind="show" id="5KW-GW-3w2"/>
+                                            <segue destination="O0w-85-uGg" kind="show" identifier="moreInfo" id="5KW-GW-3w2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="983.20000000000005" y="69.715142428785612"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed View Controller-->
         <scene sceneID="y6p-X6-kfy">
             <objects>
-                <viewController id="O0w-85-uGg" sceneMemberID="viewController">
+                <viewController id="O0w-85-uGg" customClass="DetailedViewController" customModule="Rick_and_Morty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qWc-Ux-usK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,6 +162,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DV4-kL-w8S"/>
+                    <connections>
+                        <outlet property="characterImage" destination="Clr-eo-bPd" id="aBU-Q3-CWM"/>
+                        <outlet property="name" destination="9Bv-V6-5LI" id="Uc6-xs-hhe"/>
+                        <outlet property="species" destination="Ebw-EI-24G" id="8fP-57-9bW"/>
+                        <outlet property="status" destination="h9x-N8-VLj" id="wW4-Lv-wuc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvM-A6-aTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E02882B228C8D88F001D7050 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02882B128C8D88F001D7050 /* DetailedViewController.swift */; };
+		E02882B428C8DC49001D7050 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02882B328C8DC49001D7050 /* CharacterInfo.swift */; };
 		E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */; };
 		E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA38928C8A84D00EBDE10 /* SceneDelegate.swift */; };
 		E08DA38C28C8A84D00EBDE10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA38B28C8A84D00EBDE10 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E02882B128C8D88F001D7050 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		E02882B328C8DC49001D7050 /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 		E08DA38428C8A84D00EBDE10 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08DA38928C8A84D00EBDE10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */,
 				E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */,
 				E02882B128C8D88F001D7050 /* DetailedViewController.swift */,
+				E02882B328C8DC49001D7050 /* CharacterInfo.swift */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */,
 				E02882B228C8D88F001D7050 /* DetailedViewController.swift in Sources */,
 				E08DA39E28C8B0C900EBDE10 /* SearchResponce.swift in Sources */,
+				E02882B428C8DC49001D7050 /* CharacterInfo.swift in Sources */,
 				E08DA39C28C8AED800EBDE10 /* CharacterTableViewCell.swift in Sources */,
 				E08DA3A228C8B51D00EBDE10 /* NetworkService.swift in Sources */,
 			);

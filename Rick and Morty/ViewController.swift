@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let urlString = "https://rickandmortyapi.com/api/character"
     let networkDataFetcher = NetworkDataFetcher()
     var searchResponce: SearchResponce? = nil
+    var characterInfo: CharacterInfo? = nil
     
     @IBOutlet var table: UITableView!
     
@@ -36,8 +37,14 @@ class ViewController: UIViewController {
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let segue.identifier == "moreInfo" else { return }
-        let VC = segue.destination as!
+        guard segue.identifier == "moreInfo" else { return }
+        guard let VC = segue.destination as? DetailedViewController else { return }
+        
+        if let indexPath = table.indexPathForSelectedRow {
+            if let person = searchResponce?.results[indexPath.row] {
+                VC.character = person
+            }
+        }
     }
 }
 
