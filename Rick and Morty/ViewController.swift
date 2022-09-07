@@ -33,5 +33,11 @@ class ViewController: UIViewController {
             self.table.reloadData()
         }
     }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let segue.identifier == "moreInfo" else { return }
+        let VC = segue.destination as!
+    }
 }
 
