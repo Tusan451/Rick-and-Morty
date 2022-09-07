@@ -10,7 +10,10 @@ import UIKit
 class ViewController: UIViewController {
     
     let cellId = "cell"
-    let urlString = "https://rickandmortyapi.com/api/character/[1,2,3,4,5,6,7,8,9,10]"
+    let urlString = "https://rickandmortyapi.com/api/character"
+    let networkDataFetcher = NetworkDataFetcher()
+    var searchResponce: SearchResponce? = nil
+    
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
@@ -23,6 +26,14 @@ class ViewController: UIViewController {
     private func setupTableView() {
         table.delegate = self
         table.dataSource = self
+        
+        networkDataFetcher.fetchData(urlString: urlString) { searchResponce in
+            guard let searchResponce = searchResponce else { return }
+            self.searchResponce = searchResponce
+            self.table.reloadData()
+            
+            print(searchResponce.results)
+        }
     }
 }
 
