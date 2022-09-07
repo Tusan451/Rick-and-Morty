@@ -49,6 +49,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E02882B528C8E3B8001D7050 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */,
+				E08DA38928C8A84D00EBDE10 /* SceneDelegate.swift */,
+				E08DA39528C8A84E00EBDE10 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E02882B628C8E3C5001D7050 /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA38D28C8A84D00EBDE10 /* Main.storyboard */,
+				E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */,
+			);
+			path = "Story Boards";
+			sourceTree = "<group>";
+		};
+		E02882B728C8E3DE001D7050 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA38B28C8A84D00EBDE10 /* ViewController.swift */,
+				E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */,
+				E02882B128C8D88F001D7050 /* DetailedViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E02882B828C8E3EA001D7050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA39028C8A84E00EBDE10 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E02882B928C8E3F9001D7050 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */,
+				E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E02882BA28C8E402001D7050 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */,
+				E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		E08DA37B28C8A84D00EBDE10 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +123,12 @@
 		E08DA38628C8A84D00EBDE10 /* Rick and Morty */ = {
 			isa = PBXGroup;
 			children = (
-				E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */,
-				E08DA38928C8A84D00EBDE10 /* SceneDelegate.swift */,
-				E08DA38B28C8A84D00EBDE10 /* ViewController.swift */,
-				E08DA38D28C8A84D00EBDE10 /* Main.storyboard */,
-				E08DA39028C8A84E00EBDE10 /* Assets.xcassets */,
-				E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */,
-				E08DA39528C8A84E00EBDE10 /* Info.plist */,
-				E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */,
-				E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */,
-				E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */,
-				E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */,
-				E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */,
-				E02882B128C8D88F001D7050 /* DetailedViewController.swift */,
+				E02882B528C8E3B8001D7050 /* App */,
+				E02882B728C8E3DE001D7050 /* View Controllers */,
+				E02882B628C8E3C5001D7050 /* Story Boards */,
+				E02882B828C8E3EA001D7050 /* Resources */,
+				E02882B928C8E3F9001D7050 /* Models */,
+				E02882BA28C8E402001D7050 /* Networking */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -315,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34J2M9FNPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rick and Morty/Info.plist";
+				INFOPLIST_FILE = "Rick and Morty/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,7 +392,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34J2M9FNPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rick and Morty/Info.plist";
+				INFOPLIST_FILE = "Rick and Morty/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
