@@ -22,6 +22,7 @@ class DetailedViewController: UIViewController {
         configure()
     }
     
+    // Конфигурация аутлетов
     private func configure() {
         name.text = character.name
         status.text = character.status
@@ -35,8 +36,6 @@ class DetailedViewController: UIViewController {
             DispatchQueue.main.async {
                 self.characterImage.image = UIImage(data: imageData)
             }
-            
         }
     }
-    
 }

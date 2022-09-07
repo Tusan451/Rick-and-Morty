@@ -16,6 +16,7 @@ class CharacterTableViewCell: UITableViewCell {
     @IBOutlet var status: UILabel!
     @IBOutlet var species: UILabel!
     
+    // Конфигурация элементов ячейки
     func configure(for person: Person) {
         
         name.text = person.name

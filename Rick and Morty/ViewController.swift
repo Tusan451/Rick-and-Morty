@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     let urlString = "https://rickandmortyapi.com/api/character"
     let networkDataFetcher = NetworkDataFetcher()
     var searchResponce: SearchResponce? = nil
-    var characterInfo: CharacterInfo? = nil
     
     @IBOutlet var table: UITableView!
     
