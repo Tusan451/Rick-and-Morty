@@ -13,6 +13,7 @@
 		E08DA38F28C8A84D00EBDE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08DA38D28C8A84D00EBDE10 /* Main.storyboard */; };
 		E08DA39128C8A84E00EBDE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08DA39028C8A84E00EBDE10 /* Assets.xcassets */; };
 		E08DA39428C8A84E00EBDE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */; };
+		E08DA39C28C8AED800EBDE10 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E08DA39028C8A84E00EBDE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E08DA39328C8A84E00EBDE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E08DA39528C8A84E00EBDE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E08DA39028C8A84E00EBDE10 /* Assets.xcassets */,
 				E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */,
 				E08DA39528C8A84E00EBDE10 /* Info.plist */,
+				E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				E08DA38C28C8A84D00EBDE10 /* ViewController.swift in Sources */,
 				E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */,
 				E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */,
+				E08DA39C28C8AED800EBDE10 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

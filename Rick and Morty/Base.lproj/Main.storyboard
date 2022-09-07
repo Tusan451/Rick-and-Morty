@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="rwD-jo-PV2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="rwD-jo-PV2" customClass="CharacterTableViewCell" customModule="Rick_and_Morty" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rwD-jo-PV2" id="c7W-LF-jly">
@@ -83,6 +83,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="characterImage" destination="egz-ag-kCp" id="4G8-7X-vcN"/>
+                                            <outlet property="name" destination="Igm-T1-C3C" id="jwr-bw-daY"/>
+                                            <outlet property="species" destination="yPt-xV-nBN" id="548-to-hmC"/>
+                                            <outlet property="status" destination="hRw-z6-sUT" id="XpC-ni-afL"/>
                                             <segue destination="O0w-85-uGg" kind="show" id="5KW-GW-3w2"/>
                                         </connections>
                                     </tableViewCell>
