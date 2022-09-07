@@ -82,6 +82,9 @@
                                                 <constraint firstItem="hRw-z6-sUT" firstAttribute="trailing" secondItem="c7W-LF-jly" secondAttribute="trailingMargin" id="z9K-r4-THY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="O0w-85-uGg" kind="show" id="5KW-GW-3w2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -100,6 +103,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983.20000000000005" y="69.715142428785612"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y6p-X6-kfy">
+            <objects>
+                <viewController id="O0w-85-uGg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWc-Ux-usK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Clr-eo-bPd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Clr-eo-bPd" secondAttribute="height" multiplier="1:1" id="ckI-BS-jFo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-V6-5LI">
+                                <rect key="frame" x="16" y="443" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-N8-VLj">
+                                <rect key="frame" x="16" y="483" width="343" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-EI-24G">
+                                <rect key="frame" x="16" y="514.5" width="343" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="njv-36-GWY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ebw-EI-24G" firstAttribute="top" secondItem="h9x-N8-VLj" secondAttribute="bottom" constant="12" id="4YO-Ex-mCj"/>
+                            <constraint firstItem="9Bv-V6-5LI" firstAttribute="leading" secondItem="njv-36-GWY" secondAttribute="leading" constant="16" id="6Fb-sT-5GK"/>
+                            <constraint firstItem="Clr-eo-bPd" firstAttribute="leading" secondItem="njv-36-GWY" secondAttribute="leading" id="8vU-AN-r7F"/>
+                            <constraint firstItem="njv-36-GWY" firstAttribute="trailing" secondItem="9Bv-V6-5LI" secondAttribute="trailing" constant="16" id="RDq-S8-lM0"/>
+                            <constraint firstItem="Ebw-EI-24G" firstAttribute="leading" secondItem="njv-36-GWY" secondAttribute="leading" constant="16" id="REL-gE-eBv"/>
+                            <constraint firstItem="9Bv-V6-5LI" firstAttribute="top" secondItem="Clr-eo-bPd" secondAttribute="bottom" constant="24" id="VEU-EB-dbV"/>
+                            <constraint firstItem="h9x-N8-VLj" firstAttribute="top" secondItem="9Bv-V6-5LI" secondAttribute="bottom" constant="16" id="Zlw-6L-4Ce"/>
+                            <constraint firstItem="h9x-N8-VLj" firstAttribute="leading" secondItem="njv-36-GWY" secondAttribute="leading" constant="16" id="bm2-af-Uiw"/>
+                            <constraint firstItem="njv-36-GWY" firstAttribute="trailing" secondItem="Ebw-EI-24G" secondAttribute="trailing" constant="16" id="eFB-7A-0u2"/>
+                            <constraint firstItem="Clr-eo-bPd" firstAttribute="trailing" secondItem="njv-36-GWY" secondAttribute="trailing" id="hAw-4K-D3T"/>
+                            <constraint firstItem="njv-36-GWY" firstAttribute="trailing" secondItem="h9x-N8-VLj" secondAttribute="trailing" constant="16" id="mz1-Sg-GRX"/>
+                            <constraint firstItem="Clr-eo-bPd" firstAttribute="top" secondItem="njv-36-GWY" secondAttribute="top" id="rGN-Si-Luy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DV4-kL-w8S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvM-A6-aTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="69.715142428785612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XyO-Cg-T4U">
