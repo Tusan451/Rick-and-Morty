@@ -17,6 +17,7 @@
 		E08DA39E28C8B0C900EBDE10 /* SearchResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */; };
 		E08DA3A028C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */; };
 		E08DA3A228C8B51D00EBDE10 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */; };
+		E08DA3A428C8B6D400EBDE10 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponce.swift; sourceTree = "<group>"; };
 		E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension View Controller table delegate & data source.swift"; sourceTree = "<group>"; };
 		E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */,
 				E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */,
 				E08DA3A128C8B51D00EBDE10 /* NetworkService.swift */,
+				E08DA3A328C8B6D400EBDE10 /* NetworkDataFetcher.swift */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08DA3A428C8B6D400EBDE10 /* NetworkDataFetcher.swift in Sources */,
 				E08DA38C28C8A84D00EBDE10 /* ViewController.swift in Sources */,
 				E08DA3A028C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift in Sources */,
 				E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */,
