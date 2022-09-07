@@ -31,8 +31,6 @@ class ViewController: UIViewController {
             guard let searchResponce = searchResponce else { return }
             self.searchResponce = searchResponce
             self.table.reloadData()
-            
-            print(searchResponce.results)
         }
     }
 }

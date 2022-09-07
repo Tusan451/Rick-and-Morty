@@ -10,17 +10,20 @@ import UIKit
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        var personsCount = 0
+        if let searchResponce = searchResponce {
+            personsCount = searchResponce.results.count
+        }
+        return personsCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = table.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CharacterTableViewCell
         
-        cell.name.text = "123"
-        cell.status.text = "456"
-        cell.species.text = "789"
-        
+        if let person = searchResponce?.results[indexPath.row] {
+            cell.configure(for: person)
+        }
         return cell
     }
     

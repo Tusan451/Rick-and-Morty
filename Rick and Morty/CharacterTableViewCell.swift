@@ -15,4 +15,20 @@ class CharacterTableViewCell: UITableViewCell {
     @IBOutlet var name: UILabel!
     @IBOutlet var status: UILabel!
     @IBOutlet var species: UILabel!
+    
+    func configure(for person: Person) {
+        
+        name.text = person.name
+        status.text = person.status
+        species.text = person.species
+        
+        DispatchQueue.global().async {
+            guard let imageUrl = URL(string: person.image) else { return }
+            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+            
+            DispatchQueue.main.async {
+                self.characterImage.image = UIImage(data: imageData)
+            }
+        }
+    }
 }
