@@ -8,12 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let cellId = "cell"
+    let urlString = "https://rickandmortyapi.com/api/character/[1,2,3,4,5,6,7,8,9,10]"
+    @IBOutlet var table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupTableView()
     }
-
-
+    
+    // Установка и обновление таблицы
+    private func setupTableView() {
+        table.delegate = self
+        table.dataSource = self
+    }
 }
 

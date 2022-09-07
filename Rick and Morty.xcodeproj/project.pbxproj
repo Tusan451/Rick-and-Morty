@@ -14,6 +14,8 @@
 		E08DA39128C8A84E00EBDE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08DA39028C8A84E00EBDE10 /* Assets.xcassets */; };
 		E08DA39428C8A84E00EBDE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */; };
 		E08DA39C28C8AED800EBDE10 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */; };
+		E08DA39E28C8B0C900EBDE10 /* SearchResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */; };
+		E08DA3A028C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E08DA39328C8A84E00EBDE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E08DA39528C8A84E00EBDE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponce.swift; sourceTree = "<group>"; };
+		E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension View Controller table delegate & data source.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				E08DA39228C8A84E00EBDE10 /* LaunchScreen.storyboard */,
 				E08DA39528C8A84E00EBDE10 /* Info.plist */,
 				E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */,
+				E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */,
+				E08DA39F28C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E08DA38C28C8A84D00EBDE10 /* ViewController.swift in Sources */,
+				E08DA3A028C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift in Sources */,
 				E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */,
 				E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */,
+				E08DA39E28C8B0C900EBDE10 /* SearchResponce.swift in Sources */,
 				E08DA39C28C8AED800EBDE10 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

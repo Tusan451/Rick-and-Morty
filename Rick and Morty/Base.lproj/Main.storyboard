@@ -103,6 +103,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Rick &amp; Morty Characters" id="6XR-w9-VQP"/>
+                    <connections>
+                        <outlet property="table" destination="s7C-d6-ZTg" id="LlM-fU-4TT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
