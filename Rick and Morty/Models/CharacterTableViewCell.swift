@@ -11,7 +11,7 @@ import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
 
-    @IBOutlet var characterImage: UIImageView!
+    @IBOutlet var characterImage: ImageView!
     @IBOutlet var name: UILabel!
     @IBOutlet var status: UILabel!
     @IBOutlet var species: UILabel!
@@ -22,15 +22,16 @@ class CharacterTableViewCell: UITableViewCell {
         name.text = person.name
         status.text = person.status
         species.text = person.species
+        characterImage.fetchImage(with: person.image)
         
-        DispatchQueue.global().async {
-            guard let personImage = person.image else { return }
-            guard let imageUrl = URL(string: personImage) else { return }
-            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
-            
-            DispatchQueue.main.async {
-                self.characterImage.image = UIImage(data: imageData)
-            }
-        }
+//        DispatchQueue.global().async {
+//            guard let personImage = person.image else { return }
+//            guard let imageUrl = URL(string: personImage) else { return }
+//            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+//
+//            DispatchQueue.main.async {
+//                self.characterImage.image = UIImage(data: imageData)
+//            }
+//        }
     }
 }

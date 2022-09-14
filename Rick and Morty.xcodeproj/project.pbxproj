@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01C171F28D22FDF00503099 /* imageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C171E28D22FDF00503099 /* imageView.swift */; };
 		E02882B228C8D88F001D7050 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02882B128C8D88F001D7050 /* DetailedViewController.swift */; };
 		E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */; };
 		E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08DA38928C8A84D00EBDE10 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E01C171E28D22FDF00503099 /* imageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageView.swift; sourceTree = "<group>"; };
 		E02882B128C8D88F001D7050 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		E08DA38428C8A84D00EBDE10 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08DA38728C8A84D00EBDE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				E08DA39B28C8AED800EBDE10 /* CharacterTableViewCell.swift */,
 				E08DA39D28C8B0C900EBDE10 /* SearchResponce.swift */,
+				E01C171E28D22FDF00503099 /* imageView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				E08DA38C28C8A84D00EBDE10 /* ViewController.swift in Sources */,
 				E08DA3A028C8B3AD00EBDE10 /* extension View Controller table delegate & data source.swift in Sources */,
 				E08DA38828C8A84D00EBDE10 /* AppDelegate.swift in Sources */,
+				E01C171F28D22FDF00503099 /* imageView.swift in Sources */,
 				E08DA38A28C8A84D00EBDE10 /* SceneDelegate.swift in Sources */,
 				E02882B228C8D88F001D7050 /* DetailedViewController.swift in Sources */,
 				E08DA39E28C8B0C900EBDE10 /* SearchResponce.swift in Sources */,
